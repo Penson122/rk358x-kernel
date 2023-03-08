@@ -33,7 +33,7 @@ DTBS['rk3566'] = OrderedDict([('rk3566-rg353p-linux', '#_saradc_ch1=852'),
 
 DTBS['rk3588'] = OrderedDict([('rk3588s-orangepi-5', '#_saradc_ch1=001'),
                               ('rk3588-rock-5b', '#_saradc_ch1=002'),
-			      ('rk3588s-9tripod-linux', '#_saradc_ch1=4095')])
+			      ('rk3588s-indiedroid-nova', '#_saradc_ch1=4095')])
 
 def main():
 

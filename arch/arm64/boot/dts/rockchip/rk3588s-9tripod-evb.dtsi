@@ -160,10 +160,9 @@
 };
 
 &dsi0 {
-	status = "okay";
 	//rockchip,lane-rate = <600>;
 	dsi0_panel: panel@0 {
-		status = "okay";
+		status = "disabled";
 		compatible = "simple-panel-dsi";
 		reg = <0>;
 		backlight = <&backlight>;

@@ -741,7 +741,7 @@
 		snps,axi-config = <&gmac0_stmmac_axi_setup>;
 		snps,mtl-rx-config = <&gmac0_mtl_rx_setup>;
 		snps,mtl-tx-config = <&gmac0_mtl_tx_setup>;
-		status = "disabled";
+		status = "enabled";
 
 		mdio0: mdio {
 			compatible = "snps,dwmac-mdio";

@@ -2983,7 +2983,7 @@
 		rockchip,taskqueue-node = <0>;
 		rockchip,resetgroup-node = <0>;
 		power-domains = <&power RK3588_PD_VDPU>;
-		status = "disabled";
+		status = "okay";
 	};
 
 	vdpu: vdpu@fdb50400 {
@@ -3565,7 +3565,7 @@
 		power-domains = <&power RK3588_PD_ISP1>;
 		#iommu-cells = <0>;
 		rockchip,disable-mmu-reset;
-		status = "disabled";
+		status = "okay";
 	};
 
 	isp0_mmu: iommu@fdcb7f00 {
@@ -3801,7 +3801,7 @@
 		rockchip,vo1-grf = <&vo1_grf>;
 		rockchip,pmu = <&pmu>;
 
-		status = "disabled";
+		status = "okay";
 
 		vop_out: ports {
 			#address-cells = <1>;
@@ -4237,7 +4237,7 @@
 				hdmi0_in_vp0: endpoint@0 {
 					reg = <0>;
 					remote-endpoint = <&vp0_out_hdmi0>;
-					status = "disabled";
+					status = "enabled";
 				};
 
 				hdmi0_in_vp1: endpoint@1 {
