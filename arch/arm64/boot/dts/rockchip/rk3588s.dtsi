@@ -1275,7 +1275,7 @@
 			};
 
 			route_hdmi0: route-hdmi0 {
-				status = "disabled";
+				status = "okay";
 				logo,uboot = "logo.bmp";
 				logo,kernel = "logo_kernel.bmp";
 				logo,mode = "center";
@@ -4223,7 +4223,7 @@
 		phys = <&hdptxphy_hdmi0>;
 		phy-names = "hdmi";
 		#sound-dai-cells = <0>;
-		status = "disabled";
+		status = "okay";
 
 		ports {
 			#address-cells = <1>;
