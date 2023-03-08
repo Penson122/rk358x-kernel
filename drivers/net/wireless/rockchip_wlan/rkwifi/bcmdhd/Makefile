@@ -31,7 +31,7 @@ CONFIG_MACH_PLATFORM := y
 
 DHDCFLAGS = -Wall -Wstrict-prototypes -Wno-date-time                      \
 	-Wno-implicit-fallthrough -Wno-declaration-after-statement            \
-	-Wno-vla -Wno-vla-extension                                           \
+	-Wno-vla -Wno-address                                                 \
 	-Dlinux -DLINUX -DBCMDRIVER                                           \
 	-DBCMDONGLEHOST -DBCMDMA32 -DBCMFILEIMAGE                             \
 	-DDHDTHREAD -DDHD_DEBUG -DSHOW_EVENTS -DGET_OTP_MAC_ENABLE            \
@@ -358,7 +358,7 @@ endif
 endif
 
 ARCH ?= arm64
-BCMDHD_ROOT = $(src)
+BCMDHD_ROOT = $(srctree)/$(src)
 #$(warning "BCMDHD_ROOT=$(BCMDHD_ROOT)")
 EXTRA_CFLAGS = $(DHDCFLAGS)
 EXTRA_CFLAGS += -DDHD_COMPILED=\"$(BCMDHD_ROOT)\"
